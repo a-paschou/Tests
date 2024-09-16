@@ -21,6 +21,20 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CAD\CAD.vcxproj">
+      <Project>{3dc42ab8-7a0f-45c0-8309-0d14a011c3b2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Discretization\Discretization.vcxproj">
+      <Project>{ff93e2eb-787c-4302-934e-cdab532290ca}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\FEM\FEM.vcxproj">
+      <Project>{738160d2-5cd8-4858-ac9f-59564aba453a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Solvers\Solvers.vcxproj">
+      <Project>{93686bfb-3b9e-4800-bbf0-1c8b8f1c4ce1}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -79,10 +93,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\Documents\Projects\FEM_C++\CAD;D:\Documents\Projects\FEM_C++\Solvers;D:\Documents\Projects\FEM_C++\LinearAlgebra;D:\Documents\Projects\FEM_C++\FEM;D:\Documents\Projects\FEM_C++\Discretization</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\Documents\Projects\FEM_C++\Solvers\x64\Debug;D:\Documents\Projects\FEM_C++\LinearAlgebra\x64\Debug;D:\Documents\Projects\FEM_C++\FEM\x64\Debug;D:\Documents\Projects\FEM_C++\Discretization\x64\Debug;D:\Documents\Projects\FEM_C++\CAD\x64\Debug</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -93,12 +110,15 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\Documents\Projects\FEM_C++\CAD;D:\Documents\Projects\FEM_C++\Solvers;D:\Documents\Projects\FEM_C++\LinearAlgebra;D:\Documents\Projects\FEM_C++\FEM;D:\Documents\Projects\FEM_C++\Discretization</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\Documents\Projects\FEM_C++\Solvers\x64\Debug;D:\Documents\Projects\FEM_C++\LinearAlgebra\x64\Debug;D:\Documents\Projects\FEM_C++\FEM\x64\Debug;D:\Documents\Projects\FEM_C++\Discretization\x64\Debug;D:\Documents\Projects\FEM_C++\CAD\x64\Debug</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -107,12 +127,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>E:\Documents\Projects\FEM_\Solvers;E:\Documents\Projects\FEM_\LinearAlgebra;E:\Documents\Projects\FEM_\FEM;E:\Documents\Projects\FEM_\Discretization;E:\Documents\Projects\FEM_\CAD;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Documents\Projects\FEM_C++\CAD;D:\Documents\Projects\FEM_C++\Solvers;D:\Documents\Projects\FEM_C++\LinearAlgebra;D:\Documents\Projects\FEM_C++\FEM;D:\Documents\Projects\FEM_C++\Discretization</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>E:\Documents\Projects\FEM_\Solvers\x64\Debug;E:\Documents\Projects\FEM_\LinearAlgebra\x64\Debug;E:\Documents\Projects\FEM_\FEM\x64\Debug;E:\Documents\Projects\FEM_\CAD\x64\Debug;E:\Documents\Projects\FEM_\Discretization\Discretization\x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\Documents\Projects\FEM_C++\Solvers\x64\Debug;D:\Documents\Projects\FEM_C++\LinearAlgebra\x64\Debug;D:\Documents\Projects\FEM_C++\FEM\x64\Debug;D:\Documents\Projects\FEM_C++\Discretization\x64\Debug;D:\Documents\Projects\FEM_C++\CAD\x64\Debug</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -123,12 +144,15 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\Documents\Projects\FEM_C++\CAD;D:\Documents\Projects\FEM_C++\Solvers;D:\Documents\Projects\FEM_C++\LinearAlgebra;D:\Documents\Projects\FEM_C++\FEM;D:\Documents\Projects\FEM_C++\Discretization</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\Documents\Projects\FEM_C++\Solvers\x64\Debug;D:\Documents\Projects\FEM_C++\LinearAlgebra\x64\Debug;D:\Documents\Projects\FEM_C++\FEM\x64\Debug;D:\Documents\Projects\FEM_C++\Discretization\x64\Debug;D:\Documents\Projects\FEM_C++\CAD\x64\Debug</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
